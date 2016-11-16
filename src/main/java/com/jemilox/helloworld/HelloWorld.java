@@ -19,4 +19,8 @@ public class HelloWorld {
             System.out.println(string);
         }
     }
+
+    public static String mew() {
+        return "mew";
+    }
 }

@@ -6,16 +6,18 @@ package com.jemilox.helloworld;
 
 public class HelloWorldApp {
     public static void main(String[] args) {
-        String lisa = "mew";
+        String lisa = args[0];
+        String a = "42";
+        String b = "42";
 
-
+        boolean sameObject = a == b;
+        boolean reallyEquals = a.equals(b);
 
         HelloWorld helloWorld = new HelloWorld();
 
-
-        if(lisa == "mewo"){
+        if (lisa.equals("mewo")) {
             helloWorld.sayHello();
-        }else{
+        } else {
             System.out.println("meow!");
         }
     }
